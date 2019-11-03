@@ -185,7 +185,11 @@ public class Image4j {
         }
         else if(isImage(strInputFilePath))
         {
-            if(strOutputFilePath.endsWith(".ico")||strOutputFilePath.endsWith(".ICO")){
+            if((strInputFilePath.endsWith(".png")||strInputFilePath.endsWith(".PNG")) &&
+                    (strOutputFilePath.endsWith(".jpg")||strOutputFilePath.endsWith(".JPG"))){
+                return ImageConvert(strInputFilePath,strOutputFilePath,"jpg");
+            }
+            else if(strOutputFilePath.endsWith(".ico")||strOutputFilePath.endsWith(".ICO")){
                 //png -> jpg -> ico
                 if(strInputFilePath.endsWith(".png")||strInputFilePath.endsWith(".PNG")){
                     try {
@@ -236,7 +240,7 @@ public class Image4j {
 
 
         //png -> jpg
-//        ImageConvert("D:\\Temp\\timg.png","D:\\Temp\\timg_png.jpg","jpg");
+//        Convert("D:\\Temp\\timg.png","D:\\Temp\\timg_png.jpg");
 
         //png -> bmp
 //        Convert("D:\\Temp\\timg.png","D:\\Temp\\timg_png.bmp");
@@ -250,7 +254,6 @@ public class Image4j {
 
         //ico -> bmp
 //        Convert("D:\\Temp\\timg.ico","D:\\Temp\\timg_ico.bmp");
-
 
     }
 }

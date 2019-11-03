@@ -61,13 +61,11 @@ public static boolean Convert(String strInputFilePath, String strOutputFilePath)
         //png -> jpg -> ico
         Convert("D:\\Temp\\timg.png","D:\\Temp\\timg_png.ico");
 
-
         //png -> jpg
-        ImageConvert("D:\\Temp\\timg.png","D:\\Temp\\timg_png.jpg","jpg");
+        Convert("D:\\Temp\\timg.png","D:\\Temp\\timg_png.jpg");
 
         //png -> bmp
         Convert("D:\\Temp\\timg.png","D:\\Temp\\timg_png.bmp");
-
 
         //ico -> png
         Convert("D:\\Temp\\timg.ico","D:\\Temp\\timg_ico.png");
