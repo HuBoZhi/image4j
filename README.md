@@ -1,6 +1,5 @@
 # image4j
-- 在原基础上封装了工具类<br>
-工具类截图：[![工具类]](https://github.com/HuBoZhi/image4j/blob/master/images/funcs.png)
+- 在原基础上封装了工具类
 
 # 函数说明：
 工具类封装类多个功能函数：
